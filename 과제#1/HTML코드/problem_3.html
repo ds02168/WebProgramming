@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Problem Third</title>
+        <style>
+            /* 카드 박스 구성 */
+            #card{
+                border:3px solid gray;
+                width:200px; height:400px;
+            }
+
+            /* 글자들을 중앙 정렬 */
+            .font_center{
+                text-align:center;
+            }
+
+            /* 이미지를 중앙에 배치하기위한 틀 */
+            .container{
+                width:200px;
+                height:150px;
+                overflow:hidden;
+                position:relative;
+            }
+
+            /* 이미지는 중앙에 위치 */
+            img{
+                width:100px; height:100px;
+                position:absolute;
+                top:50%; left:50%;
+                margin-left:-50px;
+                margin-top:-50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="card">
+            <h2 class="font_center">Card</h2>
+            <!-- 컨테이너에 이미지를 담음으로써 중앙 배치 -->
+            <div class="container">
+                <img src="http://placehold.it/100x100">
+            </div>
+            <p class="font_center"> AB CDEFG HIJK LMNO PQR STUVW XYZ ab cdef ghijklmn opqrst uvw xyz
+                AB CDEFG HIJK LMNO PQR STUVW XYZ ab cdef ghijklmn opqrst uvw xyz
+            </p>
+        </div>
+    </body>
+</html>

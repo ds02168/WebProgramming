@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery Basic</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function(){
+                var text = $('h1').text();
+                var html = $('h1').html();
+
+                alert(text);
+                alert(html);
+            });
+        </script>
+    </head>
+    <body>
+        <h1>header - 1</h1>
+        <h1>header - 2</h1>
+    </body>
+</html>

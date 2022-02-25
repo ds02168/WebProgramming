@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Problem First</title>
+        <style>
+            /* 테이블 CSS3 */
+            .box_table{
+                background-color:gray;
+            }
+
+            /* 제목 */
+            #title{
+                font-size:24px;
+                font-weight:bold;
+            }
+
+            /* 아이디,비밀번호 */
+            .font_label{
+                font-size:12px;
+                text-align:center;
+            }
+
+            /* 입력박스는 반원 */
+            .box_sub{
+                width:200px; height:20px;
+                border-width:0px;
+                border-radius: 10px 10px 10px 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- method는 POST방식(주소창X) -->
+        <form method="POST">
+            <!-- 테두리X, 배경색은 회색 -->
+            <table border="0" class="box_table">
+                <tr>
+                    <th id="title" colspan="2">간단한 입력 양식<th>
+                </tr>
+                <tr>
+                    <td class="font_label">아이디</td>
+                    <td><input type="text" name="id" class="box_sub"></td>
+                </tr>
+                <tr>
+                    <td class="font_label">비밀번호</td>
+                    <td><input type="password" name="pass" class="box_sub"></td>
+                </tr>
+                <tr>
+                    <!-- 열을 하나 넣어줌으로써 제출버튼을 뒤로 미룸 -->
+                    <td></td>
+                    <td><input type="submit" value="제출" class="box_sub"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

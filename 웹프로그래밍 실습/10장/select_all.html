@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dom Basic</title>
+        <script>
+            window.onload=function(){
+                const headers = document.querySelectorAll('h1');
+
+                for(var i=0;i<headers.length;i++){
+                    const header = headers[i];
+
+                    header.style.color='orange';
+                    header.style.background='red';
+                    header.innerHTML='From JavaScript';
+                }
+            };
+        </script>
+    </head>
+    <body>
+        <h1>Header</h1>
+        <h1>Header</h1>
+        <h1>Header</h1>
+    </body>
+
+</html>
